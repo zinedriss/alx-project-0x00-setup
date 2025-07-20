@@ -1,12 +1,11 @@
 // components/Button.tsx
-import React from "react";
-import { ButtonProps } from "@/interfaces";
+
+import React from 'react';
+import { ButtonProps } from '@/interfaces'; // Import the new interface
 
 const Button: React.FC<ButtonProps> = ({ title, styles }) => {
   return (
-    <button
-      className={`px-4 py-2 text-white bg-blue-500 hover:bg-blue-600 font-medium ${styles}`}
-    >
+    <button className={`bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 ${styles || ''}`}>
       {title}
     </button>
   );
